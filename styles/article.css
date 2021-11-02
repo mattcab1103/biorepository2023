@@ -6,8 +6,7 @@ article {
 
   padding: 0.5in 0;
 
-  background:
-  linear-gradient(hsl(120, 90%, 96%), white 6.6rem);
+  background-color: #1E1E1E;
 }
 
 article * { grid-column: start / end; }

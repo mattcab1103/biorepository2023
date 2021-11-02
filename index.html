@@ -1,25 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
-    <meta charset="UTF-8">
-    <title>hello, world!</title>
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/article.css">
-    <link rel="stylesheet" href="styles/article-images.css">
-    <link rel="stylesheet" href="styles/content.css">
-    <link rel="stylesheet" href="styles/hover.css">
-    <link rel="stylesheet" href="styles/tooltip.css">
-    <link rel="stylesheet" href="styles/navbar.css"
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>BioRepo2023</title>
+    <link rel="stylesheet" href="styles/home.css">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" redl="stylesheet">
   </head>
   <body>
-    <article id="page1">
-      <p>
-      <h3>Bio Repository Home Page <br> (work in progess)</h3>
-      <h4><a href="phylo/phylo1.html">Chapter 1: <em>Phylogeny and the Tree of Life</em></a></h4>
-      <h4><a href="citations/citations.html">Supplementary materials(Citations and references)</a></h4>
-    </p>
-    </article>
+    <div class="container">
+       <div class="navbar">
+         <img src="assets/images/logo.png" class="logo">
+         <nav>
+           <ul>
+             <li><a href="citations/citations.html">References</a></li>
+           </ul>
+         </nav>
+         <img src="assets/sample/menu.png" class="menu-icon">
+       </div>
+
+       <div class="row">
+         <div class="col">
+           <h1>Biology.</h1>
+            <p>All biology lessons synthesized in one useful website! </p>
+            <button type="button" onclick="goToLastViewedChapter()">Go back to where you left off.</button>
+         </div>
+         <div class="col">
+           <a href="phylo/phylo1.html"><div class="card card1">
+             <h5>Phylogeny and Evolution</h5>
+           </div></a>
+           <div class="card card2">
+            <h5>Microbial and Fungal Diversity</h5>
+          </div>
+          <div class="card card3">
+            <h5>Animal and Plant Diversity</h5>
+          </div>
+          <div class="card card4">
+            <h5>Human Impact on Biodiversity</h5>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <script src="javastuff/redirectJava.js"></script>
+
   </body>
-<html>
+</html>
