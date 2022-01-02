@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html Lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylsheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Profile Cards</title>
+    <style>
+      *{
+        margin:0;
+        box-sizing:border-box;
+        outline:none;
+
+      }
+
+      body{
+        color:white;
+        font-family: 'Roboto', sans-serif;
+        background-color: #1E1E1E;
+        overflow-x: hidden;
+        letter-spacing: 1px;
+        font: "Roboto";
+
+      }
+
+      .card-wrap{
+        padding: 0 115px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+      }
+
+      .card{
+        position: relative;
+        width: 320px;
+        height: 240px;
+        text-align: center;
+        margin: 30px 20px 0;
+      }
+
+      .card-inner{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        transform-style: preserve-3d;
+        transform-origin: center center;
+        transition: transform 1s;
+
+      }
+
+      .front{
+        background-color: #333333;
+      }
+
+      .back{
+        padding: 40px 20px;
+        background-color: #333333;
+        transform: rotateY(180deg);
+      }
+      .text{
+        margin-top: 10px;
+      }
+      h4{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom:0;
+      }
+      h6{
+        font-size: 16px;
+        color:#94adb1;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .card .front p{
+        margin: 10px 0;
+      }
+
+      .card:hover .card-inner{
+        transform: rotateY(180deg);
+        transition: transform .5s;
+      }
+
+      .card .back p{
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+
+      .socialmedia a{
+        display: inline-block;
+        color: #94a3b1;
+        border: 1px solid #94adb1;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        line-height: 40px;
+        margin: 20px 5px;
+        transition: all ease 0.5s;
+      }
+
+      .socialmediaa:hover{
+        background-color: #94adb1;
+        color: #fff;
+      }
+
+      img{
+        width: 300px;
+      }
+
+
+      .card-face{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 0px;
+        padding: 10px;
+      }
+
+      .logos {
+        display: flex;
+        justify-content: center;
+      }
+
+      .logos img {
+        width: 4.25rem;
+        height: 4.25rem;
+        padding: 0.75rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-wrap">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-face front">
+            <img src="../assets/images/archaea/acid.jpg" alt="">
+            <div class="text">
+              <h4>Acidophiles</h4>
+        
+            </div>
+          </div>
+          <div class="card-face back">
+            <p>An acidophile is an acid-loving organism These organisms require a pH of 2.0 or less. Acidity normally destroys cells, but acidophiles have evolved mechanisms to keep their internal pH constant.</p>
+            <div class="socialmedia">
+              <a href="https://en.wikipedia.org/wiki/Acidophile"><i class="fab fa-wikipedia-w"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-face front">
+            <img src="../assets/images/archaea/halosalt.jpg" alt="">
+            <div class="text">
+              <h4>Halophiles</h4>
+              
+            </div>
+          </div>
+          <div class="card-face back">
+            <p>It is the halophiles, or "salt-lovers," who can survive in extremely high salt concentrations. It is possible to find halophiles in water sources with salt concentrations more than five times higher than those of the oceans.</p>
+            <div class="socialmedia">
+              <a href="https://en.wikipedia.org/wiki/Halophile"><i class="fab fa-wikipedia-w"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-face front">
+            <img src="../assets/images/archaea/methano.png" alt="">
+            <div class="text">
+              <h4>Methanogens</h4>
+              
+            </div>
+          </div>
+          <div class="card-face back">
+            <p>In hypoxic conditions, methanogens produce methane as a metabolic byproduct.They are found in wetlands, where they produce marsh gas, and in the digestive tracts of ruminants and humans.</p>
+            <div class="socialmedia">
+              <a href="https://en.wikipedia.org/wiki/Methanogen"><i class="fab fa-wikipedia-w"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-face front">
+            <img src="../assets/images/archaea/psychroice.jpg" alt="">
+            <div class="text">
+              <h4>Psychophiles</h4>
+           
+            </div>
+          </div>
+          <div class="card-face back">
+            <p>Psychrophiles are microbes that are capable of surviving and reproducing temperatures ranging from -20 degrees Celsius to +10 degrees Celsius. They can be found in places where the temperature is consistently cold.</p>
+            <div class="socialmedia">
+              <a href="https://en.wikipedia.org/wiki/Psychrophile"><i class="fab fa-wikipedia-w"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-face front">
+            <img src="../assets/images/archaea/thermo.jpg" alt="">
+            <div class="text">
+              <h4>Thermophiles</h4>
+              
+            </div>
+          </div>
+          <div class="card-face back">
+            <p>A thermophile is an extremophile that thrives between 41°C and 122°C. Thermophiles live in hot springs like Yellowstone National Park and deep sea hydrothermal vents, as well as decaying plant matter like peat bogs and compost.</p>
+            <div class="socialmedia">
+              <a href="https://en.wikipedia.org/wiki/Thermophile"><i class="fab fa-wikipedia-w"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="logos">
+  
+      <a class="icons" href="../index.html"><img src="../assets/gifs/home.gif"></a>
+    
+    </div>
+  </body>
+</html>
