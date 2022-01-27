@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    *{
+        font-family: 'Roboto', sans-serif
+        ;
+    }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  background-color: #333333;
+  padding: 15px;
+  
+}
+
+.sciname {
+    color: #b5e4ad; 
+  font-size: 22px;
+  font-style: italic;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+body{
+margin: 10px;
+padding: 10px;
+ display:flex;
+ justify-content: center;
+ background-color: #1E1E1E;
+ color: white;
+}
+
+img{
+    width: 50px;
+    height: 225px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-radius: 10px;
+}
+
+.logos {
+  justify-content: center;
+  position: relative;
+  bottom:1%;
+  left:40%;
+  
+  z-index: 20;
+}
+
+.logos img {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.75rem;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+
+  height: 100vh;
+
+  padding: 0.5in 0;
+
+  background-color: #1E1E1E;
+}
+
+article * { grid-column: start / end; }
+
+
+
+</style>
+</head>
+<body>
+
+<div class="card">
+  <img src="../assets/images/bacteria.jpg" alt="Bacteria" style="width:100%">
+  <h1 style="color: rgb(243, 197, 44);">Bacteria</h1>
+  <p class="sciname">Podoserpula miranda</p>
+  <p>Classic cases of microorganisms that you should stay away from. Or maybe not? Maybe some of them are important too. (Report only inside)</p>
+  <a href="bacteria.html"><p><button>Discover</button></p></a>
+</div>
+
+<div class="card">
+  <img src="../assets/images/euglena.webp" alt="Denim Jeans" style="width:100%">
+  <h1 style=" color: hsl(250, 100%, 83%);">Archaea</h1>
+  <p class="sciname">Podoserpula miranda</p>
+  <p>Discover the microorganisms that can live anywhere! From your highly acidic stomach juices to the extremely hot places on earth!</p>
+  <a href="archaea.html"><p><button>Discover</button></p></a>
+</div>
+
+<div class="card">
+  <img src="../assets/images/pyro.jpg" alt="Denim Jeans" style="width:100%">
+  <h1 style="color: hsl(140, 50%, 50%);">Protists</h1>
+  <p class="sciname">Euglena gracilis</p>
+  <p>Eukaryotic single-celled organisms who are quite close to us on the evolutionary tree! Interestingly, one of them is closely connected to cats. Find out why!</p>
+  <a href="protist.html"><p><button>Discover</button></p></a>
+</div>
+
+<div class="card">
+  <img src="../assets/images/pinkfun.jpg" alt="Denim Jeans" style="width:100%">
+  <h1 style="color: #e7a2c2;">Fungi</h1>
+  <p class="sciname">Podoserpula miranda</p>
+  <p>People used to confuse these as part of the plant family, but they have a lot of interesting differences! Check them out.</p>
+  <a href="fungi.html"><p><button>Discover</button></p></a>
+</div>
+
+
+
+</body>
+</html>
