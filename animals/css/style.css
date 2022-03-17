@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.our-map {
+	width: 100%;
+	height: 100vh;
+	background: url(../images/map-background.jpg);
+	background-size: cover;
+	position: relative;
+}
+.address-first {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 54%;
+	left: 32.5%;
+	z-index: 0;
+}
+.address-second {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 20.4%;
+	left: 49.8%;
+	z-index: 0;
+}
+.address-third {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 52%;
+	left: 69.7%;
+	z-index: 0;
+}
+
+.address-fourth {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	z-index: 0;
+}
+
+.address-fifth {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 5%;
+	left: 55%;
+	z-index: 0;
+}
+
+.address-sixth {
+	width: 30%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	z-index: 0;
+}
+
+.address-text {
+	width: 100%;
+	height: auto;
+}
+.address-text p {
+	font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+	font-size: 12px;
+	font-weight: 100;
+	color: #444;
+	margin: 0px;
+	text-align: left;
+	display: flex;
+	padding-top:6px;
+}
+.address-text p span{
+	font-weight:600;
+	font-size:15px;
+	color: #444;
+}
+.address-text i {
+	font-size: 12px !important;
+	color: #F00;
+}
+.tooltip-col {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+.tooltip-col i {
+	font-size: 36px;
+	color: #BA3236;
+padding-right: 5px;
+padding-top: 2px;
+}
+.tooltiptext3 {
+	visibility: hidden;
+	width: 180px;
+	height: auto;
+	background-color:rgba(255,255,255,0.7);
+	border-radius: 6px;
+	padding: 5px 10px;
+	position: absolute;
+	z-index: 1;
+	top: 45px;
+	right: -122px;
+}
+
+.tooltiptext3::after {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 55px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent transparent #f2ea1b transparent;
+}
+
+.tooltip-col:hover .tooltiptext3 {
+	visibility: visible;
+}
+
+.tooltip-img{
+	width: auto;
+	height: 90px;
+	padding-top: 10px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 0.5s;
+	visibility: hidden;
+	opacity: 0;
+  }
+
+  .overlay:target {
+	visibility: visible;
+	opacity: 1;
+  }
+
+  .popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #fff;
+	border-radius: 5px;
+	width: 60%;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	max-height: calc(100vh - 180px);
+    overflow-y: auto;
+	z-index: 999;
+  }
+
+  .popup h2 {
+	margin: 10px;
+	margin-top: 0;
+	color: #333;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 16px;
+	text-decoration: underline;     
+  }
+
+  .popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+  }
+  .popup .close:hover {
+	color: #06D85F;
+  }
+
+  .popup .content {
+	max-height: 30%;
+	overflow: auto;
+	padding-left: 10%;
+	padding-right: 10%;
+  }
+  @media screen and (max-width: 700px){
+	.box{
+	  width: 70%;
+	}
+	.popup{
+	  width: 70%;
+	}
+  }
+
+  .center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+  }
+
+  .centermod {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+  }
+
+
+  .popup p{
+	font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	
+  }
+  .popup h2{
+	font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+	font-size: 40px;
+	color:darkblue;
+	margin-bottom: 30px;
+	padding-left: 70px;
+  }
+  
+  em{
+	  font-size: 15px;
+	  color: red;
+  }
+
+  .content em{
+	font-size: 20px;
+	color: red;
+  }
+
+  h3{
+	font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+	font-size: 25px;
+	color:darkblue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  }
+
+  .popup h4{
+	font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+	font-size: 30px;
+	color: blueviolet;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  }
+
+  .logos {
+    position: fixed;
+    justify-content: center;
+	bottom: 0;
+  	right: 0;
+  }
+
+  .logos img {
+    width: 4.25rem;
+    height: 4.25rem;
+    padding: 0.75rem;
+  }
